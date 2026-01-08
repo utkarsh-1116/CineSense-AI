@@ -6,6 +6,18 @@ This project combines **Machine Learning**, **Flask backend APIs**, and a **mode
 
 ---
 
+## 📸 Screenshots
+
+### Home Screen
+![Home Screen](screenshots/home.png)
+
+### Movie Recommendations
+![Movie Recommendations](screenshots/recommendations.png)
+
+### Movie Details & Trailer
+![Movie Overlay](screenshots/overlay.png)
+
+
 ## ✨ Features
 
 - 🤖 AI-based movie recommendations (content-based filtering)
