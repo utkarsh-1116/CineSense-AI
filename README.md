@@ -12,7 +12,7 @@ This project combines **Machine Learning**, **Flask backend APIs**, and a **mode
 ![Home Screen](screenshots/home.png)
 
 ### Movie Recommendations
-![Movie Recommendations](screenshots/recommendations.png)
+![Movie Recommendations](screenshots/recommendation.png)
 
 ### Movie Details & Trailer
 ![Movie Overlay](screenshots/overlay.png)
