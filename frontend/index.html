@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>CineSense AI</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Script (deferred so DOM loads first) -->
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <!-- =====================
+       HEADER
+       ===================== -->
+  <header>
+    <h1>🎬 CineSense AI</h1>
+    <p>Find movies similar to what you love</p>
+  </header>
+
+  <!-- =====================
+       SEARCH
+       ===================== -->
+  <section class="search-section">
+    <input
+      id="movieInput"
+      type="text"
+      placeholder="Enter a movie name..."
+      autocomplete="off"
+    />
+    <button id="recommendBtn">Recommend</button>
+  </section>
+
+  <!-- =====================
+       RESULTS (DYNAMIC)
+       ===================== -->
+  <!-- ⚠️ IMPORTANT:
+       This section MUST be empty.
+       All movie cards are injected by JavaScript.
+  -->
+  <section class="cards-container"></section>
+
+  <!-- =====================
+     FULLSCREEN OVERLAY
+     ===================== -->
+    <div id="movieOverlay" class="overlay hidden">
+
+    <button id="closeOverlay">✕</button>
+    <button id="openYoutubeBtn" class="secondary-btn">
+      Open on YouTube
+    </button>
+
+
+    <div class="overlay-content">
+        <h2 id="overlayTitle"></h2>
+
+        <button id="overlayPlayBtn">▶ Play Trailer</button>
+
+        <iframe
+        id="overlayTrailer"
+        class="hidden"
+        allow="autoplay; encrypted-media"
+        allowfullscreen>
+        </iframe>
+
+        <p id="overlayDescription"></p>
+    </div>
+
+    </div>
+
+</body>
+</html>
