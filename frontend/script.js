@@ -22,7 +22,7 @@ button.addEventListener("click", async () => {
 
   try {
     const res = await fetch(
-      `http://127.0.0.1:5000/recommend?movie=${encodeURIComponent(movie)}`
+      `http://cinesense-ai-3.onrender.com/recommend?movie=${encodeURIComponent(movie)}`
     );
 
     const data = await res.json();
