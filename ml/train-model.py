@@ -75,9 +75,9 @@ similarity = cosine_similarity(vectors)
 
 ML_DIR = os.path.dirname(os.path.abspath(__file__))
 
-model_path = os.path.join(ML_DIR, "model.pkl")
+model_path = os.path.join(os.path.dirname(__file__), "model.pkl")
+movies_path = os.path.join(os.path.dirname(__file__), "movies.pkl")
 vectorizer_path = os.path.join(ML_DIR, "vectorizer.pkl")
-movies_path = os.path.join(ML_DIR, "movies.pkl")
 
 with open(model_path, "wb") as f:
     pickle.dump(similarity, f)
