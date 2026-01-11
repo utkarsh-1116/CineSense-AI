@@ -11,9 +11,7 @@ const overlayPlayBtn = document.getElementById("overlayPlayBtn");
 const overlayTrailer = document.getElementById("overlayTrailer");
 const openYoutubeBtn = document.getElementById("openYoutubeBtn");
 
-// ====================
 // Recommend button
-// ====================
 button.addEventListener("click", async () => {
   const movie = input.value.trim();
   if (!movie) return;
@@ -39,9 +37,7 @@ button.addEventListener("click", async () => {
   }
 });
 
-// ====================
 // Render cards
-// ====================
 function renderCards(movies) {
   cardsContainer.innerHTML = "";
 
@@ -67,9 +63,7 @@ function renderCards(movies) {
   });
 }
 
-// ====================
 // Open overlay on card click
-// ====================
 document.addEventListener("click", (e) => {
   const card = e.target.closest(".movie-card");
   if (!card) return;
@@ -90,7 +84,7 @@ document.addEventListener("click", (e) => {
   overlayTrailer.classList.add("hidden");
   overlayTrailer.src = "";
 
-  // ▶ Play Trailer (best-effort embed)
+  // Play Trailer 
   overlayPlayBtn.onclick = () => {
     if (!key) {
       alert("No trailer available for this movie");
@@ -108,7 +102,7 @@ document.addEventListener("click", (e) => {
     overlayPlayBtn.style.display = "none";
   };
 
-  // 🔗 Open on YouTube (always works)
+  // Open on YouTube
   openYoutubeBtn.onclick = () => {
     if (!key) return;
 
@@ -121,9 +115,8 @@ document.addEventListener("click", (e) => {
   overlay.classList.remove("hidden");
 });
 
-// ====================
+
 // Close overlay
-// ====================
 closeOverlay.addEventListener("click", () => {
   overlay.classList.add("hidden");
   overlayTrailer.classList.add("hidden");

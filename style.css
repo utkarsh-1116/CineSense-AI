@@ -1,14 +1,12 @@
-/* =====================
-   THEME VARIABLES
-   ===================== */
+/*THEME VARIABLES*/
 :root {
   --bg-black: #0a0714;
   --card-bg: #140f2d;
 
-  --primary-purple: #a78bfa;   /* main brand */
-  --lavender: #ddd6fe;         /* soft highlights */
+  --primary-purple: #a78bfa;   
+  --lavender: #ddd6fe;        
 
-  --accent-blue: #3b82f6;      /* AI accent */
+  --accent-blue: #3b82f6;      
   --accent-blue-soft: #93c5fd;
 
   --text-main: #f5f3ff;
@@ -17,9 +15,7 @@
   --danger: #ef4444;
 }
 
-/* =====================
-   GLOBAL
-   ===================== */
+
 * {
   margin: 0;
   padding: 0;
@@ -33,9 +29,7 @@ body {
   min-height: 100vh;
 }
 
-/* =====================
-   HEADER
-   ===================== */
+
 header {
   text-align: center;
   padding: 32px 20px 20px;
@@ -52,9 +46,6 @@ header p {
   color: var(--text-muted);
 }
 
-/* =====================
-   SEARCH
-   ===================== */
 .search-section {
   display: flex;
   justify-content: center;
@@ -101,9 +92,7 @@ header p {
   box-shadow: 0 10px 25px rgba(59,130,246,0.35);
 }
 
-/* =====================
-   CARDS CONTAINER
-   ===================== */
+
 .cards-container {
   display: flex;
   justify-content: center;
@@ -112,9 +101,7 @@ header p {
   padding-bottom: 60px;
 }
 
-/* =====================
-   FLIP CARD
-   ===================== */
+
 .movie-card {
   width: 220px;
   height: 330px;
@@ -139,9 +126,6 @@ header p {
   overflow: hidden;
 }
 
-/* =====================
-   CARD FRONT
-   ===================== */
 .card-front {
   background: linear-gradient(
     160deg,
@@ -162,9 +146,6 @@ header p {
   line-height: 1.3;
 }
 
-/* =====================
-   CARD BACK
-   ===================== */
 .card-back {
   transform: rotateY(180deg);
   background-size: cover;
@@ -177,9 +158,6 @@ header p {
   background-color: rgba(0,0,0,0.55);
 }
 
-/* =====================
-   PLAY BUTTON
-   ===================== */
 .play-btn {
   background: linear-gradient(
     135deg,
@@ -201,9 +179,6 @@ header p {
   filter: brightness(1.1);
 }
 
-/* =====================
-   DESCRIPTION
-   ===================== */
 .description {
   font-size: 0.85rem;
   color: #e9e7ff;
@@ -232,9 +207,7 @@ header p {
 .hidden {
   display: none;
 }
-/* =====================
-   FULLSCREEN OVERLAY
-   ===================== */
+
 .overlay {
   position: fixed;
   inset: 0;
@@ -300,9 +273,7 @@ header p {
   line-height: 1.6;
   color: #e9e7ff;
 }
-/* =====================
-   OVERLAY
-   ===================== */
+
 .overlay {
   position: fixed;
   inset: 0;
@@ -318,9 +289,7 @@ header p {
   display: none;
 }
 
-/* =====================
-   OVERLAY CONTENT
-   ===================== */
+
 .overlay-content {
   max-width: 900px;
   width: 90%;
@@ -328,9 +297,7 @@ header p {
   color: white;
 }
 
-/* =====================
-   CLOSE BUTTON
-   ===================== */
+
 #closeOverlay {
   position: absolute;
   top: 20px;
@@ -343,9 +310,7 @@ header p {
   cursor: pointer;
 }
 
-/* =====================
-   OPEN YOUTUBE BUTTON
-   ===================== */
+
 #openYoutubeBtn {
   position: absolute;
   top: 20px;
@@ -364,14 +329,12 @@ header p {
   background: rgba(255,255,255,0.15);
 }
 
-/* Overlay background handling */
 #movieOverlay {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 }
 
-/* Extra safety for ugly images */
 #movieOverlay::before {
   content: "";
   position: absolute;
